@@ -575,7 +575,7 @@ def show_predict_page():
                 max_mileage_choose, 
                 is_4x4_choose
             ]
-        ])
+        ], dtype=object)
 
         X_min = np.array([
             [ 
@@ -593,7 +593,7 @@ def show_predict_page():
                 max_mileage_choose, 
                 is_4x4_choose
             ]
-        ])
+        ], dtype=object)
 
         X_max = np.array([
             [ 
@@ -611,7 +611,7 @@ def show_predict_page():
                 max_mileage_choose, 
                 is_4x4_choose
             ]
-        ])
+        ], dtype=object)
   
         price = model.predict(X)
         price = round(price[0]/1000)*1000
